@@ -108,7 +108,7 @@ vec3 calcColor(/*hit data type*/ int hitInfo) {
  * returns new coordinates where y range [-1, 1] and x scales according to window resolution
  */
 vec2 scaleUV(vec2 uv) {
-    
+
 }
 
 void main() {
@@ -119,6 +119,8 @@ void main() {
 
     vec3 color = calcColor(hitInfo);
 
+    // test
+    // remove when implementing raytracer
     color = vec3(vUV.x, vUV.y, abs(sin(uTime)));
     FragColor = vec4(color, 1.0);
 }
